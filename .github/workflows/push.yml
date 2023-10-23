@@ -1,0 +1,13 @@
+name: Deploy de la pagina
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy-page:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
