@@ -4,7 +4,7 @@
     cursor: pointer;
     border-radius: 5px;
     background: var(--primary-color);
-    color: #fff;
+    color: var(--light-color);
 }
 
 .filter_widget select:focus {

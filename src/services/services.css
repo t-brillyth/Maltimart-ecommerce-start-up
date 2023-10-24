@@ -12,7 +12,7 @@
     background: var(--primary-color);
     padding: 10px;
     border-radius: 50px;
-    color: #fff;
+    color: var(--light-color);
     font-weight: 400 !important;
 }
 

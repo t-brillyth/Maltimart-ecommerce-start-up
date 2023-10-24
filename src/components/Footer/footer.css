@@ -19,7 +19,7 @@
 
 .quick__links-title{
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--light-color);
     font-size: 1.1rem;
 }
 

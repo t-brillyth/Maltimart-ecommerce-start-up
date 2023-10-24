@@ -33,32 +33,32 @@ const Clock = () => {
     })
 
   return (
-    <div className='clock__wrapper d-flex align-items-center gap-6'>
+    <div className='clock__wrapper d-flex align-items-center justify-content-center gap-6'>
       <div className='clock__data d-flex align-items-center gap-3'>
         <div className='text-center'>
             <h1 className='text-white fs-3 mb-2'>{days}</h1>
-            <h5 className='text-white fs-6'>Days</h5>
+            <h5 className='text-white fs-6'>Días</h5>
         </div>
         <span className='text-white fs-3'>:</span>
       </div>
       <div className='clock__data d-flex align-items-center gap-3'>
         <div className='text-center'>
             <h1 className='text-white fs-3 mb-2'>{hours}</h1>
-            <h5 className='text-white fs-6'>Hours</h5>
+            <h5 className='text-white fs-6'>Horas</h5>
         </div>
         <span className='text-white fs-3'>:</span>
       </div>
       <div className='clock__data d-flex align-items-center gap-3'>
         <div className='text-center'>
             <h1 className='text-white fs-3 mb-2'>{minutes}</h1>
-            <h5 className='text-white fs-6'>Minutes</h5>
+            <h5 className='text-white fs-6'>Minutos</h5>
         </div>
         <span className='text-white fs-3'>:</span>
       </div>
       <div className='clock__data d-flex align-items-center gap-3'>
         <div className='text-center'>
             <h1 className='text-white fs-3 mb-2'>{seconds}</h1>
-            <h5 className='text-white fs-6'>Seconds</h5>
+            <h5 className='text-white fs-6'>Segundos</h5>
         </div>
       </div>
     </div>

@@ -13,33 +13,33 @@ const Shop = () => {
 
   const handleFilter = e =>{
     const filterValue = e.target.value;
-    if (filterValue === "sofa") {
+    if (filterValue === "colonias") {
       const filteredProducts = products.filter(
-        (item) => item.category === "sofa"
+        (item) => item.category === "colonias"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "mobile") {
+    if (filterValue === "cremas") {
       const filteredProducts = products.filter(
-        (item) => item.category === "mobile"
+        (item) => item.category === "cremas"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "chair") {
+    if (filterValue === "toallas") {
       const filteredProducts = products.filter(
-        (item) => item.category === "chair"
+        (item) => item.category === "toallas"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "watch") {
+    if (filterValue === "aseo") {
       const filteredProducts = products.filter(
-        (item) => item.category === "watch"
+        (item) => item.category === "aseo"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "wireless") {
+    if (filterValue === "panal") {
       const filteredProducts = products.filter(
-        (item) => item.category === "wireless"
+        (item) => item.category === "panal"
       );
       setProductsData(filteredProducts);
     }
@@ -62,21 +62,21 @@ const Shop = () => {
             <Col lg="3" md="6">
               <div className="filter_widget">
                 <select onChange={handleFilter}>
-                  <option>Filter By Category</option>
-                  <option value="sofa">Sofa</option>
-                  <option value="mobile">Mobile</option>
-                  <option value="chair">Chair</option>
-                  <option value="watch">Watch </option>
-                  <option value="wireless">Wireless</option>
+                  <option>Filtrar categoría</option>
+                  <option value="colonias">Colonias</option>
+                  <option value="cremas">Cremas</option>
+                  <option value="aseo">Aseo</option>
+                  <option value="toallas">Toallas </option>
+                  <option value="panal">Pañales</option>
                 </select>
               </div>
             </Col>
-            <Col lg="3" md="6" className='text-end'>
+            <Col lg="3" md="6" className='text-start'>
               <div className="filter_widget">
                   <select>
-                    <option>Sort By</option>
-                    <option value="ascending">Ascending</option>
-                    <option value="descending">Descending</option>
+                    <option>Ordernar por</option>
+                    <option value="ascending">Ascendente</option>
+                    <option value="descending">Descendente</option>
                   </select>
               </div>
             </Col>

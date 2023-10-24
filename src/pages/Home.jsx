@@ -21,7 +21,7 @@ const Home = () => {
 
   const [trendingProducts, setTrendingProducts] = useState([]);
   const [bestSalesProducts, setBestSalesProducts] = useState([]);
-  const [mobileProducts, setMobileProducts] = useState([]);
+  const [mobileProducts, setCremasProducts] = useState([]);
   const [wirelessProducts, setWirelessProducts] = useState([]);
   const [popularProducts, setPopularProducts] = useState([]);
 
@@ -29,23 +29,23 @@ const Home = () => {
 
   useEffect(()=>{
     const filteredTrendingProducts = products.filter(
-      (item) => item.category === 'chair');
+      (item) => item.category === 'panal');
     
     const filteredBestSalesProducts = products.filter(
-      (item) => item.category === 'sofa');
+      (item) => item.category === 'cremas');
     
-    const filteredMobileProducts = products.filter(
-      (item) => item.category === 'mobile');
+    const filteredCremasProducts = products.filter(
+      (item) => item.category === 'toallas');
     
     const filteredWirelessProducts = products.filter(
-      (item) => item.category === 'wireless');
+      (item) => item.category === 'colonias');
     
     const filteredPopularProducts = products.filter(
-      (item) => item.category === 'watch');
+      (item) => item.category === 'aseo');
 
     setTrendingProducts(filteredTrendingProducts);
     setBestSalesProducts(filteredBestSalesProducts);
-    setMobileProducts(filteredMobileProducts);
+    setCremasProducts(filteredCremasProducts);
     setWirelessProducts(filteredWirelessProducts);
     setPopularProducts(filteredPopularProducts);
   }, [products]);
@@ -57,15 +57,13 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
-                <p className="hero__subtitle">Trading product in {year}</p>
-                <h2>Make Your Interior More Minimalistic & Modern </h2>
+                <p className="hero__subtitle">¡Explora y ahorra hoy mismo!</p>
+                <h2>Cuida a tu bebé con comodidad y calidad</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  ad voluptatem possimus tenetur, voluptas facilis facere saepe
-                  dicta laudantium animi!
+                Protección para tu bebé, directo a tu puerta. <br/>¡Explora nuestra tienda en línea!
                 </p>
                 <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
-                  <Link to="/shop">SHOP NOW</Link>{" "}
+                  <Link to="/shop">COMPRAR AHORA</Link>{" "}
                 </motion.button>
               </div>
             </Col>
@@ -82,10 +80,10 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h2 className="section__title">Treding Products</h2>
+              <h2 className="section__title">Productos comerciales</h2>
             </Col>
             {
-              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={trendingProducts} />
+              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={trendingProducts.slice(0, 4)} />
             }
           </Row>
         </Container>
@@ -95,10 +93,10 @@ const Home = () => {
       <Container>
         <Row>
           <Col lg="12" className="text-center">
-            <h2 className="section__title">Best Sales</h2>
+            <h2 className="section__title">Mejores Ventas</h2>
           </Col>
           {
-              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={bestSalesProducts} />
+              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={bestSalesProducts.slice(0, 4)} />
             }
         </Row>
       </Container>
@@ -107,15 +105,16 @@ const Home = () => {
       <section className="timer__count">
         <Container>
           <Row>
-            <Col lg="6" md="12" className="count__down-col">
-              <div className="clock__top-content">
-                <h4 className="text-white fs-6 mb-2">Limited Offers</h4>
-                <h3 className="text-white fs-5 mb-3">Quality Armchauir</h3>
+            <Col lg="6" md="12" className="count__down-col text-center">
+              <div className="clock__top-content text-center">
+              <h2 className="text-white fs-5 mb-1">Canasta surtida {year}</h2>
+                <h4 className="text-white fs-6 mb-3">Ofertas limitadas</h4>
+                
               </div>
               <Clock />
-              <motion.button whileTap={{ scale:1.2 }} className="buy__btn store__btn"><Link to="/shop">Visit Store</Link></motion.button>
+              <motion.button whileTap={{ scale:1.2 }} className="buy__btn store__btn"><Link to="/shop">Ir a tienda</Link></motion.button>
             </Col>
-            <Col lg="6" md="12" className="text-end counter__img">
+            <Col lg="6" md="12" className="text-center counter__img">
               <img src={counterImg} alt="Imagen Ofertas" />
             </Col>
           </Row>
@@ -126,13 +125,13 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-                <h2 className="section__title">New Arrivals</h2>
+                <h2 className="section__title">Recién Llegados</h2>
             </Col>
             {
-              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={mobileProducts} />
+              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={mobileProducts.slice(0, 4)} />
             }
             {
-              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={wirelessProducts} />
+              loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={wirelessProducts.slice(0, 4)} />
             }
           </Row>
         </Container>
@@ -142,7 +141,7 @@ const Home = () => {
       <Container>
         <Row>
           <Col lg="12" className="text-center">
-          <h2 className="section__title mb-2"> Popular in Category</h2>
+          <h2 className="section__title mb-5"> Categoría Popular</h2>
           </Col>
           {
               loading ? <h5 className="fw-bold">Cargando....</h5> : <ProductsList data={popularProducts} />

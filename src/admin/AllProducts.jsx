@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { db } from '../firebase.config';
 import { doc, deleteDoc } from 'firebase/firestore';
@@ -9,8 +9,6 @@ import { Link } from 'react-router-dom';
 
 const AllProducts = () => {
   const { data: productsData, loading } = useGetData('products');
-  const [editingProduct, setEditingProduct] = useState(null);
-  const [isEditing, setIsEditing] = useState(false);
 
   const deleteProduct = async (id) => {
     await deleteDoc(doc(db, 'products', id));
@@ -22,6 +20,10 @@ const AllProducts = () => {
     <section>
       <Container>
         <Row>
+          <Col lg="12" className='mb-5 text-end'> 
+          <Link to={`/dashboard/add-product`} className='btn btn-primary mx-2'>
+          <i class="ri-add-circle-line"></i> Crear producto
+          </Link> </Col>
           <Col lg="12">
             <table className='table'>
               <thead>
@@ -30,7 +32,7 @@ const AllProducts = () => {
                   <th>Nombre</th>
                   <th>Categoría</th>
                   <th>Precio</th>
-                  <th>Acciones</th>
+                  <th className='text-center'>Acciones</th>
                 </tr>
               </thead>
               <tbody>
@@ -47,17 +49,17 @@ const AllProducts = () => {
                       <td>{item.productName}</td>
                       <td>{item.category}</td>
                       <td>${item.price}</td>
-                      <td>
+                      <td className='text-center'>
                         <button 
                         onClick={() => 
                         {
                           deleteProduct(item.id)
                         }}
                         className='btn btn-danger'>
-                          Eliminar
+                          <i class="ri-delete-bin-line"></i> Eliminar
                         </button>
                         <Link to={`/dashboard/edit-product/${item.id}`} className='btn btn-primary mx-2'>
-                          Editar
+                        <i class="ri-edit-box-line"></i>  Editar
                         </Link>
                       </td>
                     </tr>

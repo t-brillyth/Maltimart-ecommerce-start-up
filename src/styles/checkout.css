@@ -5,7 +5,7 @@
 .checkout__cart {
     padding: 20px;
     background: var(--primary-color);
-    color: #fff;
+    color: var(--light-color);
     border-radius: 5px;
 }
 
@@ -26,6 +26,6 @@
 }
 
 .checkout__cart .auth__btn{
-    background-color: #fff;
+    background-color: var(--light-color);
     color: var(--primary-color);
 }

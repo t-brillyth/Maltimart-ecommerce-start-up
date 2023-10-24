@@ -6,6 +6,7 @@ import { db, storage } from "../firebase.config";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import '../styles/form_style.css';
 
 const AddProducts = () => {
   const [enterTitle, setEnterTitle] = useState("");
@@ -80,12 +81,12 @@ const AddProducts = () => {
             ) : (
               <div>
                 <h2 className="mb-5">Añadir Producto</h2>
-                <Form onSubmit={addProduct}>
+                <Form onSubmit={addProduct} className="product__form">
                   <FormGroup className="form__group">
                     <span>Nombre del Producto</span>
                     <input
                       type="text"
-                      placeholder="Doodle Sofa"
+                      placeholder="Doodle Colonias"
                       value={enterTitle}
                       onChange={(e) => setEnterTitle(e.target.value)}
                       required
@@ -132,11 +133,11 @@ const AddProducts = () => {
                         required
                       >
                         <option>Selecciona una categoría</option>
-                        <option value="chair">Chair</option>
-                        <option value="sofa">Sofa</option>
-                        <option value="mobile">Mobile</option>
-                        <option value="watch">Watch</option>
-                        <option value="wireless">Wireless</option>
+                        <option value="aseo">Aseo</option>
+                        <option value="colonias">Colonias</option>
+                        <option value="cremas">Cremas</option>
+                        <option value="toallas">Toallas</option>
+                        <option value="panal">Pañales</option>
                       </select>
                     </FormGroup>
                   </div>

@@ -72,72 +72,82 @@ const EditProduct = () => {
         <Row>
           <Col lg="12">
             <h2 className="mb-5">Editar Producto</h2>
-            <Form onSubmit={handleEdit}>
-              <FormGroup className="form__group">
-                <span>Nombre del Producto</span>
-                <input
-                  type="text"
-                  placeholder="Doodle Sofa"
-                  value={editedProduct.productName}
-                  onChange={(e) => setEditedProduct({ ...editedProduct, productName: e.target.value })}
-                  required
-                />
-              </FormGroup>
-              <FormGroup className="form__group">
-                <span>Descripción corta</span>
-                <input
-                  type="text"
-                  placeholder="Lorem....."
-                  value={editedProduct.shortDesc}
-                  onChange={(e) => setEditedProduct({ ...editedProduct, shortDesc: e.target.value })}
-                  required
-                />
-              </FormGroup>
-              <FormGroup className="form__group">
-                <span>Descripción</span>
-                <input
-                  type="text"
-                  placeholder="Lorem....."
-                  value={editedProduct.description}
-                  onChange={(e) => setEditedProduct({ ...editedProduct, description: e.target.value })}
-                  required
-                />
-              </FormGroup>
-              <div className="d-flex align-items-center justify-content-between gap-5">
-                <FormGroup className="form__group w-50">
-                  <span>Precio</span>
+            {
+              loading ? (
+                <Col lg="12" className='text-center'>
+                  <h5 className='fw-bold'>Cargando...</h5>
+                </Col>
+              ) : (
+                <Form onSubmit={handleEdit}>
+                <FormGroup className="form__group">
+                  <span>Nombre del Producto</span>
                   <input
-                    type="number"
-                    placeholder="$1200"
-                    value={editedProduct.price}
-                    onChange={(e) => setEditedProduct({ ...editedProduct, price: e.target.value })}
+                    type="text"
+                    placeholder="Doodle Colonias"
+                    value={editedProduct.productName}
+                    onChange={(e) => setEditedProduct({ ...editedProduct, productName: e.target.value })}
                     required
                   />
                 </FormGroup>
-                <FormGroup className="form__group w-50">
-                  <span>Categoría</span>
-                  <select
-                    className="w-100 p-2"
-                    value={editedProduct.category}
-                    onChange={(e) => setEditedProduct({ ...editedProduct, category: e.target.value })}
+                <FormGroup className="form__group">
+                  <span>Descripción corta</span>
+                  <input
+                    type="text"
+                    placeholder="Lorem....."
+                    value={editedProduct.shortDesc}
+                    onChange={(e) => setEditedProduct({ ...editedProduct, shortDesc: e.target.value })}
                     required
-                  >
-                    <option>Selecciona una categoría</option>
-                    <option value="chair">Chair</option>
-                    <option value="sofa">Sofa</option>
-                    <option value="mobile">Mobile</option>
-                    <option value="watch">Watch</option>
-                    <option value="wireless">Wireless</option>
-                  </select>
+                  />
                 </FormGroup>
-              </div>
-              <button className="btn btn-success mt-4" type="submit">
-                Guardar Cambios
-              </button>
-              <button className="btn btn-danger mt-4 mx-2" onClick={handleCancel}>
-                Cancelar
-              </button>
-            </Form>
+                <FormGroup className="form__group">
+                  <span>Descripción</span>
+                  <input
+                    type="text"
+                    placeholder="Lorem....."
+                    value={editedProduct.description}
+                    onChange={(e) => setEditedProduct({ ...editedProduct, description: e.target.value })}
+                    required
+                  />
+                </FormGroup>
+                <div className="d-flex align-items-center justify-content-between gap-5">
+                  <FormGroup className="form__group w-50">
+                    <span>Precio</span>
+                    <input
+                      type="number"
+                      placeholder="$1200"
+                      value={editedProduct.price}
+                      onChange={(e) => setEditedProduct({ ...editedProduct, price: e.target.value })}
+                      required
+                    />
+                  </FormGroup>
+                  <FormGroup className="form__group w-50">
+                    <span>Categoría</span>
+                    <select
+                      className="w-100 p-2"
+                      value={editedProduct.category}
+                      onChange={(e) => setEditedProduct({ ...editedProduct, category: e.target.value })}
+                      required
+                    >
+                      <option>Selecciona una categoría</option>
+                      <option value="aseo">Aseo</option>
+                      <option value="colonias">Colonias</option>
+                      <option value="cremas">Cremas</option>
+                      <option value="toallas">Toallas</option>
+                      <option value="panal">Pañales</option>
+                    </select>
+                  </FormGroup>
+                </div>
+                <button className="btn btn-success mt-4" type="submit">
+                  Guardar Cambios
+                </button>
+                <button className="btn btn-danger mt-4 mx-2" onClick={handleCancel}>
+                  Cancelar
+                </button>
+              </Form>
+              )
+            }
+
+           
           </Col>
         </Row>
       </Container>

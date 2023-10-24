@@ -1,7 +1,7 @@
 .admin__header{
     width: 100%;
     padding: 20px 0px;
-    background: var(--primary-color);
+    background: #263833;
 }
 
 .admin__nav-top{
@@ -44,7 +44,7 @@
     width: 100%;
     height: 70px;
     line-height: 80px;
-    background: var(--card-bg-02);
+    background: var(--card-bg-04);
 }
 
 .admin__navigation{
@@ -66,4 +66,8 @@
 }
 .active__admin-menu{
     background: whitesmoke;
+}
+
+.show__profileActions{
+    display: block !important;
 }

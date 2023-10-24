@@ -20,5 +20,5 @@
 }
 
 .auth__form input[type='file']{
-    color: #fff;
+    color: var(--light-color);
 }

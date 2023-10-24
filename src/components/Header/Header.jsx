@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./header.css";
 import { motion } from "framer-motion";
-import logo from "../../assets/images/eco-logo.png";
+import logo from "../../assets/images/logo_alfresi.png";
 import userIcon from "../../assets/images/user-icon.png";
 import { Container, Row } from "reactstrap";
 import { useSelector } from "react-redux";
@@ -10,20 +10,20 @@ import useAuth from "../../custom-hooks/useAuth";
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase.config";
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"; 
 
 const nav__links = [
   {
     path: "home",
-    display: "Home",
+    display: "Inicio",
   },
   {
     path: "shop",
-    display: "Shop",
+    display: "Tienda",
   },
   {
     path: "cart",
-    display: "Cart",
+    display: "Carrito",
   },
 ];
 
@@ -77,9 +77,6 @@ const Header = () => {
           <div className="nav__warapper">
             <div className="logo">
               <img src={logo} alt="Logo" aria-label="Logo de la marca" />
-              <div>
-                <h1>Alfresi</h1>
-              </div>
             </div>
 
             <div className="navigation" ref={menuRef} onClick={menuToggle}>

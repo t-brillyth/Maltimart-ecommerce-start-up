@@ -1,3 +1,7 @@
+.content_primary{
+    min-height: 60dvh;
+}
+
 .revenue__box,
 .order__box,
 .products__box,

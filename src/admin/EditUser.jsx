@@ -101,17 +101,17 @@ const EditUser = () => {
   };
 
   return (
-    <Helmet title="Edit Profile">
+    <Helmet title="Editar Usuario">
       <section>
         <Container>
           <Row>
             {loading ? (
               <Col lg="12" className='text-center'>
-                <h5 className='fw-bold'>Loading...</h5>
+                <h5 className='fw-bold'>Cargando...</h5>
               </Col>
             ) : (
               <Col lg="6" className='m-auto text-center'>
-                <h1 className='fw-bold fs-4 mb-4'>Editar Perfil</h1>
+                <h1 className='fw-bold fs-4 mb-4'>Editar Usuario</h1>
                 <Form className='auth__form' onSubmit={updateProfileData}>
                   <FormGroup className='form__group'>
                     <input type="text" placeholder='Username' value={username} onChange={e => setUsername(e.target.value)} />

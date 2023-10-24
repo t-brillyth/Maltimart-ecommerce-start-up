@@ -1,40 +1,37 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../images/jabon_liquido_bebe.png";
+import productImg02 from "../images/shampoo_arruru.webp";
+import productImg03 from "../images/shampoo_huggies.webp";
+import productImg04 from "../images/baño_liquido_bebe.webp";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg05 from "../images/colonia_arrurru_promo.webp";
+import productImg06 from "../images/colonia_arrurru_promo_2.webp";
+import productImg07 from "../images/colonia_arrurru.webp";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg08 from "../images/crema_n_4_antipañalitis.png";
+import productImg09 from "../images/crema_colind_antipañalitis.png";
+import productImg10 from "../images/crema_arruru.webp";
+import productImg11 from "../images/crema_almipro.webp";
+import productImg12 from "../images/crema_recien_nacido.webp";
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg13 from "../images/toallas_humedas_arrurru.webp";
+import productImg14 from "../images/toallas_humedas_pequeñin.webp";
+import productImg15 from "../images/toallas_humedas_winny.webp";
+import productImg16 from "../images/toallas_humedas_huggies.webp";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
-
-import productImg23 from "../images/wireless-01.png";
-
-import productImg25 from "../images/wireless-03.png";
+import productImg17 from "../images/panal_winny_etapa_4.png";
+import productImg18 from "../images/panal_winny_etapa_5.png";
+import productImg19 from "../images/panal_winny_etapa_3.png";
+import productImg20 from "../images/panal_huggies_etapa_3.webp";
+import productImg21 from "../images/panal_huggies_etapa_2.webp";
+import productImg22 from "../images/panal_adulto.webp";
 
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "babyDove",
     imgUrl: productImg01,
-    category: "sofa",
-    price: 193,
+    category: "aseo",
+    price: 15000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -50,10 +47,10 @@ const products = [
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Shampoo Arrurú ",
     imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
+    category: "aseo",
+    price: 12000,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -73,10 +70,10 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "Shampoo Huggies Manzanilla",
     imgUrl: productImg03,
-    category: "sofa",
-    price: 173,
+    category: "aseo",
+    price: 10200,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -93,12 +90,13 @@ const products = [
     ],
     avgRating: 4.7,
   },
+
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
+    productName: "Johnson´s Baño liquido ",
+    imgUrl: productImg04,
+    category: "aseo",
+    price: 25300,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -115,12 +113,13 @@ const products = [
     ],
     avgRating: 4.7,
   },
+
   {
     id: "04",
-    productName: "Fllufy Sheep Sofa",
-    imgUrl: productImg04,
-    category: "sofa",
-    price: 163,
+    productName: "Colonia Arrurrú Original",
+    imgUrl: productImg05,
+    category: "colonias",
+    price: 16300,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -140,10 +139,10 @@ const products = [
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
-    imgUrl: productImg05,
-    category: "sofa",
-    price: 163,
+    productName: "Colonia Arrurú Hipoalergénico",
+    imgUrl: productImg06,
+    category: "colonias",
+    price: 18500,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -163,10 +162,10 @@ const products = [
 
   {
     id: "06",
-    productName: "Fllufy Sheep Sofa",
-    imgUrl: productImg06,
-    category: "sofa",
-    price: 163,
+    productName: "Colonia Arrurú Oferta",
+    imgUrl: productImg07,
+    category: "colonias",
+    price: 16300,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -183,12 +182,13 @@ const products = [
     ],
     avgRating: 4.7,
   },
+  
   {
     id: "07",
-    productName: "Sakarias Armchair",
-    imgUrl: productImg07,
-    category: "chair",
-    price: 99,
+    productName: "Crema N4 Antipañalitis",
+    imgUrl: productImg08,
+    category: "cremas",
+    price: 19900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -208,10 +208,10 @@ const products = [
 
   {
     id: "27",
-    productName: "Modern Arm Sofa",
-    imgUrl: productImg007,
-    category: "sofa",
-    price: 173,
+    productName: "Crema Colind antipañalitis",
+    imgUrl: productImg09,
+    category: "cremas",
+    price: 17300,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -231,9 +231,9 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
-    imgUrl: productImg08,
-    category: "chair",
+    productName: "Crema Arrurú Original",
+    imgUrl: productImg10,
+    category: "cremas",
     price: 89,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -254,10 +254,10 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
-    imgUrl: productImg09,
-    category: "chair",
-    price: 112,
+    productName: "Crema Almipro Emoliente",
+    imgUrl: productImg11,
+    category: "cremas",
+    price: 11200,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -277,10 +277,10 @@ const products = [
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
-    imgUrl: productImg13,
-    category: "mobile",
-    price: 799,
+    productName: "Johnson's Crema hidratante",
+    imgUrl: productImg12,
+    category: "toallas",
+    price: 7990,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -299,10 +299,10 @@ const products = [
   },
   {
     id: "25",
-    productName: "Sakarias Armchair",
-    imgUrl: productImg10,
-    category: "chair",
-    price: 99,
+    productName: "Toallitas Húmedas Arrurú",
+    imgUrl: productImg13,
+    category: "toallas",
+    price: 20900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -321,10 +321,10 @@ const products = [
   },
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
+    productName: "Toallitas Húmedas Pequeñin",
     imgUrl: productImg14,
-    category: "mobile",
-    price: 799,
+    category: "toallas",
+    price: 7990,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -344,10 +344,10 @@ const products = [
 
   {
     id: "12",
-    productName: "Realme 8",
+    productName: "Toallitas Húmedas Winny",
     imgUrl: productImg15,
-    category: "mobile",
-    price: 599,
+    category: "toallas",
+    price: 5990,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -367,10 +367,10 @@ const products = [
 
   {
     id: "13",
-    productName: "One Plus Nord",
+    productName: "Toallitas Húmedas Huggies",
     imgUrl: productImg16,
-    category: "mobile",
-    price: 799,
+    category: "toallas",
+    price: 9900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -390,10 +390,10 @@ const products = [
 
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
+    productName: "Pañal Winny Etapa 4",
     imgUrl: productImg17,
-    category: "mobile",
-    price: 899,
+    category: "panal",
+    price: 89900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -413,10 +413,10 @@ const products = [
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
+    productName: "Pañal Winny Etapa 5",
     imgUrl: productImg18,
-    category: "mobile",
-    price: 699,
+    category: "panal",
+    price: 69900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -436,10 +436,10 @@ const products = [
 
   {
     id: "16",
-    productName: "Rolex Watch",
+    productName: "Pañal Winny Etapa 3",
     imgUrl: productImg19,
-    category: "watch",
-    price: 299,
+    category: "panal",
+    price: 29900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -459,10 +459,10 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Pañal Huggies Etapa 3",
     imgUrl: productImg20,
-    category: "watch",
-    price: 299,
+    category: "panal",
+    price: 39900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -482,10 +482,10 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
+    productName: "Pañal Huggies Etapa 2",
     imgUrl: productImg21,
-    category: "watch",
-    price: 299,
+    category: "panal",
+    price: 19900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -505,56 +505,10 @@ const products = [
 
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Pañal Slip Adulto",
     imgUrl: productImg22,
-    category: "watch",
-    price: 399,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
-  },
-
-  {
-    id: "20",
-    productName: "Beat Studio Wireless",
-    imgUrl: productImg23,
-    category: "wireless",
-    price: 199,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
-  },
-
-  {
-    id: "22",
-    productName: "Beat EP Headphones",
-    imgUrl: productImg25,
-    category: "wireless",
-    price: 199,
+    category: "panal",
+    price: 39900,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
