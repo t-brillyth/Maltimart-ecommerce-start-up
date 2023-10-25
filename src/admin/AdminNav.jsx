@@ -52,7 +52,7 @@ const AdminNav = () => {
               <div className="logo">
               <img src={logo} alt="Logo" aria-label="Logo de la marca" />
               </div>
-              <div className="search__box">
+               <div className="search__box">
                 <input type="text" placeholder="Buscar..." />
                 <span>
                   <i className="ri-search-line"></i>

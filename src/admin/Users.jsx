@@ -53,13 +53,13 @@ const Users = () => {
                           }}
                           className="btn btn-danger"
                         >
-                          <i class="ri-delete-bin-line"></i> Eliminar
+                          <i className="ri-delete-bin-line"></i> Eliminar
                         </button>
                         <Link
                           to={`/dashboard/users/edit-user/${user.uid}`}
                           className="btn btn-primary mx-2"
                         >
-                          <i class="ri-edit-box-line"></i> Editar
+                          <i className="ri-edit-box-line"></i> Editar
                         </Link>
                       </td>
                     </tr>

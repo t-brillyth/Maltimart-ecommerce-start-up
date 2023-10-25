@@ -22,7 +22,7 @@ const AllProducts = () => {
         <Row>
           <Col lg="12" className='mb-5 text-end'> 
           <Link to={`/dashboard/add-product`} className='btn btn-primary mx-2'>
-          <i class="ri-add-circle-line"></i> Crear producto
+          <i className="ri-add-circle-line"></i> Crear producto
           </Link> </Col>
           <Col lg="12">
             <table className='table'>
@@ -56,10 +56,10 @@ const AllProducts = () => {
                           deleteProduct(item.id)
                         }}
                         className='btn btn-danger'>
-                          <i class="ri-delete-bin-line"></i> Eliminar
+                          <i className="ri-delete-bin-line"></i> Eliminar
                         </button>
                         <Link to={`/dashboard/edit-product/${item.id}`} className='btn btn-primary mx-2'>
-                        <i class="ri-edit-box-line"></i>  Editar
+                        <i className="ri-edit-box-line"></i>  Editar
                         </Link>
                       </td>
                     </tr>
