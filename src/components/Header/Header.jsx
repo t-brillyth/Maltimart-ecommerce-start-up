@@ -27,6 +27,17 @@ const nav__links = [
   },
 ];
 
+auth.onAuthStateChanged(user => {
+  if (user) {
+    if (user.uid === "057HUOBaLQUyBJitLzRD01EgtiJ3") {
+      nav__links.push({
+        path: "dashboard",
+        display: "Dashboard",
+      });
+    }
+  }
+});
+
 const Header = () => {
   const headerRef = useRef(null);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
@@ -37,10 +48,12 @@ const Header = () => {
 
   const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        headerRef.current.classList.add("sticky__header");
-      } else {
-        headerRef.current.classList.remove("sticky__header");
+      if (headerRef.current) {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          headerRef.current.classList.add("sticky__header");
+        } else {
+          headerRef.current.classList.remove("sticky__header");
+        }
       }
     });
   };
@@ -123,7 +136,6 @@ const Header = () => {
                     <div className="d-flex align-items-center justify-content-center flex-column">
                       <Link to="/signup">Registrar</Link>
                       <Link to="/login">Ingresar</Link>
-                      <Link to="/dashboard">Dashboard</Link>
                     </div>
                   )}
                 </div>

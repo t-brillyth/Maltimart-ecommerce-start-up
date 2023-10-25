@@ -14,12 +14,16 @@ const admin__nav = [
     path: "/dashboard",
   },
   {
-    display: "All-Products",
+    display: "Productos",
     path: "/dashboard/all-products",
   },
   {
-    display: "Users",
+    display: "Usuarios",
     path: "/dashboard/users",
+  },
+  {
+    display: "Página",
+    path: "/home",
   },
 ];
 

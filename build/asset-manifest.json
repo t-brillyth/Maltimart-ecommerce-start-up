@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.047f528f.css",
-    "main.js": "/static/js/main.f213dcc4.js",
+    "main.css": "/static/css/main.30695d76.css",
+    "main.js": "/static/js/main.a0b0c7f7.js",
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/logo_alfresi.png": "/static/media/logo_alfresi.1d920721057dcc6169a7.png",
     "static/media/logo_alfresi_light.png": "/static/media/logo_alfresi_light.80b61d69f050b9ff69a1.png",
@@ -35,11 +35,11 @@
     "static/media/baño_liquido_bebe.webp": "/static/media/baño_liquido_bebe.f871f1fd1693b08cc5b8.webp",
     "static/media/crema_recien_nacido.webp": "/static/media/crema_recien_nacido.d01eaf1c6dff96d5e724.webp",
     "index.html": "/index.html",
-    "main.047f528f.css.map": "/static/css/main.047f528f.css.map",
-    "main.f213dcc4.js.map": "/static/js/main.f213dcc4.js.map"
+    "main.30695d76.css.map": "/static/css/main.30695d76.css.map",
+    "main.a0b0c7f7.js.map": "/static/js/main.a0b0c7f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.047f528f.css",
-    "static/js/main.f213dcc4.js"
+    "static/css/main.30695d76.css",
+    "static/js/main.a0b0c7f7.js"
   ]
 }
