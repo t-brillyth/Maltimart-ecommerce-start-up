@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <section>
+      <section className="container__dashboard">
         <Container>
           <Row className="lg-3">
             <Col className="lg-3">

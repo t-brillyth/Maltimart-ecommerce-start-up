@@ -95,3 +95,7 @@
 .admin__header .search__box span{
     color: var(--primary-color);
 }
+
+.container__dashboard{
+    min-height:38vh;
+}
